@@ -12,7 +12,6 @@
         </ul>
       </nav>
     </div>
-    
   </header>
 </template>
 
@@ -100,17 +99,17 @@ export default {
     width: 75px;
     height: 75px;
   }
-}
-ul{
-  list-style: none;
-  li {
-    display: inline-block;
-    margin: 0.8rem;
-      a{
-      text-decoration: none;
-      color: #0D7CEC;
-    }
+  ul{
+    list-style: none;
+    li {
+      display: inline-block;
+      margin: 0.8rem;
+        a{
+        text-decoration: none;
+        color: #0D7CEC;
+      }
+    } 
   }
-    
 }
+
 </style>
