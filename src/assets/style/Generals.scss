@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Nunito:ital@1&family=Roboto&family=Rubik:ital@1&display=swap');
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
   font-family: 'Nunito', sans-serif;
   min-width: 1250px;
