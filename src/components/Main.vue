@@ -20,8 +20,7 @@ main{
   color: #fff;
   .main-container{
     @include container();
-    display:flex;
-    align-items:center;
+    @include align();
     min-height: 100px;
   }
 }

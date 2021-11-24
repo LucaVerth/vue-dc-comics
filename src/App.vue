@@ -13,7 +13,6 @@ import Main from './components/Main.vue'
 import Section from './components/Section.vue'
 import Footer from './components/Footer.vue'
 
-
 export default {
   name: 'App',
   components: {

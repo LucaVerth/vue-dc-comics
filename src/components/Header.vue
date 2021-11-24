@@ -93,9 +93,8 @@ export default {
 
 .head-wrapper {
   @include container();
-  display: flex;
+  @include align();
   justify-content: space-between;
-  align-items: center;
   height: 100px; 
   .head-logo {
     width: 75px;
@@ -109,6 +108,7 @@ ul{
     margin: 0.8rem;
       a{
       text-decoration: none;
+      color: #0D7CEC;
     }
   }
     
