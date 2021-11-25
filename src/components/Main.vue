@@ -2,20 +2,33 @@
   <main>
     <Jumbotron/>
     <div class="main-container">
-      <Comics/>
+      <div class="card-list">
+        <Comics
+          v-for="(product, index) in ProductsItems"
+          :key="index"
+          :product="product"
+        />
+      </div>
+      
     </div>
   </main>
 </template>
 
 <script>
-import Comics from './ComicsCard.vue'
-import Jumbotron from './Jumbotron.vue'
+import Comics from './ComicsCard.vue';
+import Jumbotron from './Jumbotron.vue';
+import ProductsItems from '../assets/data/products.js';
 
 export default {
   name: 'Main',
   components:{
     Comics,
     Jumbotron,
+  },
+  data(){
+    return {
+      ProductsItems,
+    }
   }
 }
 </script>
