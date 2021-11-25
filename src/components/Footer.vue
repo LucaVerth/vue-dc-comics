@@ -50,7 +50,16 @@
           <div class="button"><a href="#">sign-up now!</a></div>
         </div>
         <div class="social-links">
-          <div>SOCIAL LINKS</div>
+          <div class="text">
+            FOLLOW US
+          </div>
+          <div class="social">
+            <span><img src="../assets/img/footer-facebook.png" alt=""></span>
+            <span><img src="../assets/img/footer-twitter.png" alt=""></span>
+            <span><img src="../assets/img/footer-youtube.png" alt=""></span>
+            <span><img src="../assets/img/footer-pinterest.png" alt=""></span>
+            <span><img src="../assets/img/footer-periscope.png" alt=""></span>
+          </div>
         </div>
       </div>
     </div>
@@ -118,6 +127,20 @@ footer{
         width: 150px;
         height: 50px;
         border: 5px solid #0282F9;
+      }
+    }
+  }
+  .social-links{
+    @include align();
+    .text{
+      color: #0282F9;
+    }
+    .social{
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+      span{
+        margin: 0.4rem;
       }
     }
   }

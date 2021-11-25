@@ -17,6 +17,7 @@ export default {
 <style lang="scss">
 .card{
   width: calc((100% / 6) - 40px);
-  margin: 40px 10px;
+  margin: 10px 10px;
+  padding-top: 40px;
 }
 </style>
