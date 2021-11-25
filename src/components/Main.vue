@@ -1,14 +1,22 @@
 <template>
-  <main> 
+  <main>
+    <Jumbotron/>
     <div class="main-container">
-      -->Content goes here
+      <Comics/>
     </div>
   </main>
 </template>
 
 <script>
+import Comics from './ComicsCard.vue'
+import Jumbotron from './Jumbotron.vue'
+
 export default {
-  name: 'Main'
+  name: 'Main',
+  components:{
+    Comics,
+    Jumbotron,
+  }
 }
 </script>
 
