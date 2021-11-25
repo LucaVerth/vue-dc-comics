@@ -15,15 +15,8 @@ export default {
 </script>
 
 <style lang="scss">
-.card-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-}
 .card{
-    flex-basis: calc(100% /6);
-    margin: 40px 0;
-    padding: 0 20px;
+  width: calc((100% / 6) - 40px);
+  margin: 40px 10px;
 }
-
 </style>

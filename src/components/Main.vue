@@ -9,7 +9,9 @@
           :product="product"
         />
       </div>
-      
+    </div>
+    <div class="load-btn">
+      <div class="custom-btn"><a href="#">load more</a></div>
     </div>
   </main>
 </template>
@@ -44,5 +46,22 @@ main{
     @include align();
     min-height: 100px;
   }
+  .load-btn{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    .custom-btn{
+      @include button();
+      width: 250px;
+      height: 40px;
+      background-color: #0282F9;
+    }
+  }
+}
+.card-list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 </style>

@@ -47,7 +47,7 @@
     <div class="social-wrapper">
       <div class="footer-social">
         <div class="footer-button">
-          BOTTONE SIGN UP 
+          <div class="button"><a href="#">sign-up now!</a></div>
         </div>
         <div class="social-links">
           <div>SOCIAL LINKS</div>
@@ -112,7 +112,13 @@ footer{
       height: inherit;
       @include container();
       @include align();
-      justify-content: space-between
+      justify-content: space-between;
+      .button{
+        @include button();
+        width: 150px;
+        height: 50px;
+        border: 5px solid #0282F9;
+      }
     }
   }
 }
