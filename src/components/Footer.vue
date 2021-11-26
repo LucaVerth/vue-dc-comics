@@ -41,7 +41,7 @@
         </ul>
       </div>
       <div class="footer-logo">
-        <img src="../assets/img/dc-logo-bg.png" alt="">
+        <img src="../assets/img/dc-logo-bg.png" alt="" />
       </div>
     </div>
     <div class="social-wrapper">
@@ -50,15 +50,13 @@
           <div class="button"><a href="#">sign-up now!</a></div>
         </div>
         <div class="social-links">
-          <div class="text">
-            FOLLOW US
-          </div>
+          <div class="text">FOLLOW US</div>
           <div class="social">
-            <span><img src="../assets/img/footer-facebook.png" alt=""></span>
-            <span><img src="../assets/img/footer-twitter.png" alt=""></span>
-            <span><img src="../assets/img/footer-youtube.png" alt=""></span>
-            <span><img src="../assets/img/footer-pinterest.png" alt=""></span>
-            <span><img src="../assets/img/footer-periscope.png" alt=""></span>
+            <span><img src="../assets/img/footer-facebook.png" alt="" /></span>
+            <span><img src="../assets/img/footer-twitter.png" alt="" /></span>
+            <span><img src="../assets/img/footer-youtube.png" alt="" /></span>
+            <span><img src="../assets/img/footer-pinterest.png" alt="" /></span>
+            <span><img src="../assets/img/footer-periscope.png" alt="" /></span>
           </div>
         </div>
       </div>
@@ -68,82 +66,82 @@
 
 <script>
 export default {
-  name: 'Footer'
-}
+  name: "Footer",
+};
 </script>
 
 <style lang="scss">
-@import '../assets/style/mixins.scss';
+@import "../assets/style/mixins.scss";
 
-footer{
+footer {
   height: 500px;
   background: #fff url(../assets/img/footer-bg.jpg) no-repeat center;
   background-size: cover;
 
-  .footer-links{
+  .footer-links {
     @include container();
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     height: 400px;
-    .links{
+    .links {
       width: 40%;
       color: #fff;
       display: flex;
       flex-direction: column;
       flex-wrap: wrap-reverse;
-      ul{
+      ul {
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         list-style: none;
         margin-top: 30px;
-        h4{
+        h4 {
           margin-bottom: 10px;
         }
-        li a{
+        li a {
           text-decoration: none;
           color: grey;
         }
       }
     }
-    .footer-logo{
+    .footer-logo {
       position: absolute;
       right: 0;
       top: -60px;
     }
   }
-  .social-wrapper{
+  .social-wrapper {
     height: 100px;
     position: relative;
     background-color: #303030;
-    .footer-social{
+    .footer-social {
       height: inherit;
       @include container();
       @include align();
       justify-content: space-between;
-      .button{
+      .button {
         @include button();
         width: 150px;
         height: 50px;
-        border: 5px solid #0282F9;
+        border: 5px solid #0282f9;
       }
     }
   }
-  .social-links{
+  .social-links {
     @include align();
-    .text{
-      color: #0282F9;
+    .text {
+      color: #0282f9;
     }
-    .social{
+    .social {
       display: flex;
       justify-content: space-evenly;
       margin: 20px;
-      span{
+      span {
         margin: 0.4rem;
+        cursor: pointer;
       }
     }
   }
 }
-
 </style>
